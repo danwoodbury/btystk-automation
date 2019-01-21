@@ -44,9 +44,4 @@ public abstract class TestBase extends AbstractTestNGCucumberTests {
     public void tearDownAppium() {
         driver.quit();
     }
-
-    @AfterClass
-    public void restartApp() {
-        driver.resetApp();
-    }
 }

@@ -5,15 +5,21 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import Tests.AbstractBaseTests.TestBase;
  
 @CucumberOptions(
     features = "classpath:Features",
     glue = {"Tests"},
     tags = {"@Smoke"},
+    monochrome = true,
+    strict = true,
     format = {"pretty"}
 )
-public class TestRunner {
+public class TestRunner extends TestBase {
     private TestNGCucumberRunner testNGCucumberRunner;
+
+    public void setUpPage() {}
  
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
