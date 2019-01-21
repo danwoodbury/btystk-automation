@@ -3,7 +3,7 @@
 <suite name="Default Suite">
     <test name="test">
         <classes>
-            <class name="Tests.LoginTest"/>
+            <class name="TestRunner"/>
         </classes>
     </test>
 </suite>

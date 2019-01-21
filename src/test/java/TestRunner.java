@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
  
 @CucumberOptions(
-    features = "classpath:LoginTest",
+    features = "classpath:Features",
     glue = {"Tests"},
     tags = {"@Smoke"},
     format = {"pretty"}
