@@ -14,7 +14,7 @@ import Tests.AbstractBaseTests.TestBase;
     tags = {"@Smoke"},
     monochrome = true,
     strict = true,
-    format = {"pretty"}
+    format = {"pretty", "json:/tmp/reports/cucumber.json"}
 )
 public class TestRunner extends TestBase {
     private TestNGCucumberRunner testNGCucumberRunner;
